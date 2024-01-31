@@ -48,7 +48,7 @@ const Work = () => {
         </h1>
         <div className="w-full h-full  absolute top-0">
           {images.map((elem, index) =>elem.isActive && (
-            <img style={{
+            <img key={index} style={{
                 top:elem.top,
                 left:elem.left
 
